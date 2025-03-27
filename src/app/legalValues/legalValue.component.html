@@ -1,0 +1,34 @@
+
+<div class="dropdown" appDropdown>
+  <a style="cursor: pointer;" class="dropdown-toggle" role="button"
+    > {{ selectedTableValue }} <span class="caret"></span
+  ></a>
+  <ul class="dropdown-menu">
+    <li>
+      <a *ngFor="let table of tables; let i = index" (click)="onSelectTable(i)"> 
+        {{ table }} 
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="row">
+  <div class="col-xs-10">
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let ingredient of ingredients; let i = index"
+        (click)="onEditItem(i)"
+      >
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </a>
+    </ul>
+    <hr>
+    <app-legalValue-edit></app-legalValue-edit>
+  </div>
+</div>
+
+
+
+ 
