@@ -15,7 +15,7 @@ export class ShoppingListComponent implements OnInit, OnDestroy {
   private subscription: Subscription;
 
   constructor(private slService: ShoppingListService,
-    private logservice: LoggingService) { }
+              private logservice: LoggingService) { }
 
   ngOnInit() {
     this.ingredients = this.slService.getIngredients();
@@ -26,7 +26,7 @@ export class ShoppingListComponent implements OnInit, OnDestroy {
         }
       );
 
-      this.logservice.printLog("Finishing Shopping List onInit");
+    this.logservice.printLog('Finishing Shopping List onInit');
   }
 
   onEditItem(index: number) {

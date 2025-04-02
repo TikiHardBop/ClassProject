@@ -65,4 +65,5 @@ export class LegalValueEditComponent implements OnInit, OnDestroy {
     this.subscription.unsubscribe();
   }
 
+
 }

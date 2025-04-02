@@ -16,7 +16,7 @@ import { DropdownModule } from 'primeng/dropdown';
 
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],  
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

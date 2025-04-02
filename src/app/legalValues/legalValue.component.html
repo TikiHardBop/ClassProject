@@ -5,8 +5,8 @@
   ></a>
   <ul class="dropdown-menu">
     <li>
-      <a *ngFor="let table of tables; let i = index" (click)="onSelectTable(i)"> 
-        {{ table }} 
+      <a *ngFor="let table of tables; let i = index" (click)="onSelectTable(i)">
+        {{ table }}
       </a>
     </li>
   </ul>
@@ -27,8 +27,18 @@
     <hr>
     <app-legalValue-edit></app-legalValue-edit>
   </div>
+
+  <button
+    id="Table_Row_row_ColumnName"
+    class="btn btn-danger"
+    type="button"
+    (click)="onButtonClick()"
+    >FindById</button>
+
 </div>
 
 
 
- 
+
+
+

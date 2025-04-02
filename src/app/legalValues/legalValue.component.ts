@@ -65,8 +65,7 @@ export class LegalValueComponent implements OnInit, OnDestroy {
           this.ingredients = ingredients;
         }
       );
-
-      this.logservice.printLog("Finishing Shopping List onInit");
+    this.logservice.printLog('Finishing Shopping List onInit');
   }
 
   onEditItem(index: number) {
@@ -75,6 +74,10 @@ export class LegalValueComponent implements OnInit, OnDestroy {
   onSelectTable(index: number) {
     this.selectedTableValue = this.tables[index];
   }
+  onButtonClick() {
+    console.log('Button was clicked.');
+  }
+
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
